@@ -1,0 +1,447 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+%profile-heading {
+  font-size: 28px;
+  border-top: 2px solid #bdbdc0;
+  border-bottom: 2px solid #bdbdc0;
+  padding: 20px 0;
+  margin-left: 30px;
+  color: #303238;
+  letter-spacing: 8px;
+}
+.wrapper {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  .portfolio-main-grid {
+    display: grid;
+    grid-template-columns: 40% auto;
+    width: 1400px;
+    margin: 0 auto;
+    .portfolio-main-left {
+      background-color: #f2e1da;
+      padding: 50px 0;
+      .portfolio-leftbar {
+        width: 80%;
+        margin: 50px auto 50px auto;
+        margin-top: 0px;
+        background-color: #fff;
+        .profile-image {
+          text-align: center;
+          padding-top: 50px;
+          margin-top: 50px;
+          img {
+            max-width: 70%;
+          }
+        }
+        .profile-name {
+          padding: 0 40px 30px 30px;
+          text-align: center;
+          
+          h3 {
+            text-transform: uppercase;
+            font-size: 50px;
+            margin-bottom: 0;
+            font-weight: 700;
+            color: #303238;
+            letter-spacing: 2px;
+          }
+          small {
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 500;
+            color: #303238;
+            letter-spacing: 2px;
+          }
+        }
+        .profile-contact {
+          h3 {
+            @extend %profile-heading;
+          }
+        }
+        .profile-contact-list {
+          display: grid;
+          grid-template-columns: 30% auto;
+          margin-left: 30px;
+          .profile-contact-list-tittle {
+            margin: 15px 0 10px 0;
+            h4 {
+              font-size: 18px;
+              margin: 0;
+              color: #58595b;
+            }
+          }
+          .profile-contact-list-details {
+            margin: 15px 0 10px 0;
+            p {
+              font-size: 18px;
+              margin: 0;
+              color: #58595b;
+              font-style: italic;
+            }
+          }
+        }
+        .profile-skills {
+          margin-top: 120px;
+          h3 {
+            @extend %profile-heading;
+          }
+          ul {
+            margin: 0;
+            padding-left: 50px;
+          }
+          li {
+            padding-bottom: 40px;
+            color: #58595b;
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: italic;
+          }
+        }
+        .profile-language {
+          margin-top: 40px;
+          padding-bottom: 40px;
+          h3 {
+            @extend %profile-heading; 
+          }
+          ul {
+            margin: 0;
+            padding-left: 50px;
+          }
+          li {
+            padding-bottom: 30px;
+            color: #58595b;
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            span {
+              padding-left: 10%;
+              font-style: italic;
+            }
+          }
+
+        }
+      }
+    }
+    .portfolio-main-right {
+      background-color: #d2d3d4;
+      padding: 50px 0;
+      .portfolio-personalia {
+        background-color: #fff;
+        margin-right: 50px;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-bottom: 40px;
+        margin-top: 50px;
+        h3 {
+          @extend %profile-heading;
+        }
+        p {
+          padding-left: 30px;
+          padding-right: 30px;
+          color: #58595b;
+          font-style: italic;
+          font-size: 18px;
+          line-height: 35px;
+        }
+      }
+      .portfolio-education {
+        background-color: #fff;
+        margin-right: 50px;
+        padding-left: 70px;
+        padding-bottom: 40px;
+        h3 {
+          @extend %profile-heading;
+          margin: 0;
+        }
+        .portfolio-education-grid {
+          display: grid;
+          grid-template-columns: 10% auto;
+          .portfolio-education-img {
+            padding-top: 50px;
+            img {
+              height: 250px;
+            }
+          }
+          .portfolio-education-list {
+            padding-top: 50px;
+            .portfolio-education-details {
+              margin-bottom: 60px;
+              span {
+                font-size: 20px;
+                color: #58595b;
+              }
+              h2 {
+                margin: 0;
+                font-size: 20px;
+                color: #58595b;
+                padding: 10px 0;
+              }
+              p {
+                margin: 0;
+                color: #58595b;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+      .portfolio-work-experience {
+        background-color: #fff;
+        margin-right: 50px;
+        padding-left: 70px;
+        h3 {
+          @extend %profile-heading;
+          margin: 0;
+        }
+        .work-experience-grid {
+          display: grid;
+          grid-template-columns: 8% auto;
+          .work-experience-img {
+            padding-top: 50px;
+            img {
+              height: 687px;
+            }
+          }
+          .work-experience-details {
+            padding-top: 50px;
+            .work-experience-position-tittle {
+              display: grid;
+              grid-template-columns: 60% auto;
+              .position-tittle-main {
+                h2 {
+                  margin: 0;
+                  color: #58595b;
+                  padding-bottom: 7px;
+                }
+                small {
+                  font-style: italic;
+                  color: #58595b;
+                  font-size: 20px;
+
+                }
+              }
+              .location-main {
+                span {
+                  font-size: 16px;
+                  font-style: italic;
+                  color: #58595b;
+                  img {
+                    width: 15px;
+                  }
+                }
+              }
+            }
+            .work-experience-paragraph {
+              p {
+                padding-right: 30px;
+                color: #58595b;
+                font-style: italic;
+                font-size: 18px;
+                line-height: 28px;
+                padding-bottom: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1400px) {
+  .wrapper {
+    .portfolio-main-grid {
+      width: 95%;
+    }
+  }
+}
+
+//  Breakpoint 1024px to 1366
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .wrapper {
+    .portfolio-main-grid {
+      width: 95%;
+      .portfolio-main-left {
+        .portfolio-leftbar {
+          width: 90%;
+          .profile-name {
+            h3 {
+              font-size: 36px;
+              margin-bottom: 10px;
+            }
+          }
+          .profile-contact-list {
+            .profile-contact-list-tittle {
+              h4 {
+                font-size: 16px;
+              }
+            }
+            .profile-contact-list-details  {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+          .profile-skills {
+            margin-top: 40px;
+          }
+        }
+      }
+      .portfolio-main-right {
+        .portfolio-personalia {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 0px;
+        }
+        .portfolio-education {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+        }
+        .portfolio-work-experience {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+          .work-experience-grid {
+            .work-experience-details {
+              .work-experience-position-tittle {
+                grid-template-columns: 60% auto;
+                .location-main {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// iPad Breakpoint 768px to 1023px
+@media (min-width: 959px) and (max-width: 1023px) {
+  .wrapper {
+    .portfolio-main-grid {
+      width: 100%;
+      .portfolio-main-left {
+        .portfolio-leftbar {
+          width: 90%;
+          .profile-name {
+            h3 {
+              font-size: 36px;
+              margin-bottom: 10px;
+            }
+          }
+          .profile-contact-list {
+            .profile-contact-list-tittle {
+              h4 {
+                font-size: 16px;
+              }
+            }
+            .profile-contact-list-details  {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+          .profile-skills {
+            margin-top: 40px;
+          }
+        }
+      }
+      .portfolio-main-right {
+        .portfolio-personalia {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 0px;
+        }
+        .portfolio-education {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+        }
+        .portfolio-work-experience {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+          .work-experience-grid {
+            .work-experience-details {
+              .work-experience-position-tittle {
+                grid-template-columns: 100%;
+                .location-main {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile Breakpoint 767
+@media (max-width: 959px) {
+  .wrapper {
+    .portfolio-main-grid {
+      width: 100%;
+      grid-template-columns: 100%;
+      .portfolio-main-left {
+        .portfolio-leftbar {
+          width: 90%;
+          .profile-name {
+            h3 {
+              font-size: 36px;
+              margin-bottom: 10px;
+            }
+          }
+          .profile-contact-list {
+            .profile-contact-list-tittle {
+              h4 {
+                font-size: 16px;
+              }
+            }
+            .profile-contact-list-details  {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+          .profile-skills {
+            margin-top: 40px;
+          }
+        }
+      }
+      .portfolio-main-right {
+        .portfolio-personalia {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 0px;
+        }
+        .portfolio-education {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+        }
+        .portfolio-work-experience {
+          margin-right: 20px;
+          margin-left: 20px;
+          padding-left: 30px;
+          .work-experience-grid {
+            .work-experience-details {
+              .work-experience-position-tittle {
+                grid-template-columns: 100%;
+                .location-main {
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
