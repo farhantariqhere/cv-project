@@ -3,14 +3,16 @@ import Institute from './Institute';
 
 const data = [
     { 
-      year:'2013 - 2015', 
+      from:'2013',
+      to:'2015', 
       degree:'MASTERS IN COMPUTER SCINCE ENGENEERING', 
       address:'University / College /  Name,Washington DC, USA .',
       icon:require('../../assets/images/border-line-cer.png'),
       className: 'border-dots'
     },
     { 
-      year:'2013 - 2015', 
+      from:'2013',
+      to:'2015', 
       degree:'MASTERS IN COMPUTER SCINCE ENGENEERING', 
       address:'University / College /  Name,Washington DC, USA .',
       icon:require('../../assets/images/border-line-cer.png'),
