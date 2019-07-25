@@ -2,7 +2,7 @@ import React from 'react';
 
 function Title() {
   return (
-    <div className="Title">
+    <div>
        <div className="profile-image">
           <img src={require('../../assets/images/profile.png')} alt="Profile" />
         </div>

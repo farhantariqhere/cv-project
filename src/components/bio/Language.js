@@ -2,7 +2,7 @@ import React from 'react';
 
 function Language() {
   return (
-    <div className="Language">
+    <div>
       <div className="profile-language">
         <h3>LANGUAGE</h3>
         <ul>

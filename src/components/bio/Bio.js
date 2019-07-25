@@ -6,7 +6,7 @@ import Language from './Language';
 
 function Bio() {
   return (
-    <div className="Bio">
+    <div>
       <div className="portfolio-main-left">
         <div className="portfolio-leftbar">
           <Title />

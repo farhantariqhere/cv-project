@@ -2,7 +2,7 @@ import React from 'react';
 
 function Skill(props) {
   return (
-    <div className="Skill">
+    <div>
       <ul>
         <li>{props.data}</li>
       </ul> 

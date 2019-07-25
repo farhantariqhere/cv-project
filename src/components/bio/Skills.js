@@ -10,7 +10,7 @@ const skills = data.map((item,i) => {
 
 function Skills() {
   return (
-    <div className="Skills">
+    <div>
         <div className="profile-skills">
           <h3>PRO SKILLS</h3>
            {skills}

@@ -2,53 +2,62 @@ body {
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 16px;
+}
 %profile-heading {
-  font-size: 28px;
+  font-size: 1.75rem;
   border-top: 2px solid #bdbdc0;
   border-bottom: 2px solid #bdbdc0;
-  padding: 20px 0;
-  margin-left: 30px;
+  padding: 1.25rem 0;
+  margin-left: 1.875rem;
   color: #303238;
-  letter-spacing: 8px;
+  letter-spacing: 0.5rem;
 }
+%dots-style {
+  position: absolute;
+  width: 0.75rem;
+  left: -0.3125rem;
+}
+
+
+
 .wrapper {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   .portfolio-main-grid {
     display: grid;
     grid-template-columns: 40% auto;
-    width: 1400px;
-    grid-template-rows: 1940px;
+    width: 87.5rem;
     margin: 0 auto;
     .portfolio-main-left {
       background-color: #f2e1da;
-      padding: 50px 0 0 0;
+      padding: 3.125rem 0 3.125rem 0;
       .portfolio-leftbar {
         width: 80%;
-        margin: 50px auto 50px auto;
-        margin-top: 0px;
+        margin: 0 auto;
         background-color: #fff;
         .profile-image {
           text-align: center;
-          padding-top: 50px;
+          padding-top: 3.125rem;
           img {
             max-width: 70%;
           }
         }
         .profile-name {
-          padding: 0 40px 30px 30px;
+          padding: 0 2.5rem 1.875rem 1.875rem;
           text-align: center;
           
           h3 {
             text-transform: uppercase;
-            font-size: 50px;
+            font-size: 3.125rem;
             margin-bottom: 0;
             font-weight: 700;
             color: #303238;
             letter-spacing: 2px;
           }
           small {
-            font-size: 25px;
+            font-size: 1.5625rem;
             font-style: italic;
             font-weight: 500;
             color: #303238;
@@ -63,19 +72,19 @@ body {
         .profile-contact-list {
           display: grid;
           grid-template-columns: 30% auto;
-          margin-left: 30px;
+          margin-left: 1.875rem;
           .profile-contact-list-tittle {
-            margin: 15px 0 10px 0;
+            margin: 15px 0 0.625rem 0;
             h4 {
-              font-size: 18px;
+              font-size: 1.125rem;
               margin: 0;
               color: #58595b;
             }
           }
           .profile-contact-list-details {
-            margin: 15px 0 10px 0;
+            margin: 0.9375rem 0 0.625rem 0;
             p {
-              font-size: 18px;
+              font-size: 1.125rem;
               margin: 0;
               color: #58595b;
               font-style: italic;
@@ -83,38 +92,38 @@ body {
           }
         }
         .profile-skills {
-          margin-top: 120px;
+          margin-top: 7.5rem;
           h3 {
             @extend %profile-heading;
           }
           ul {
             margin: 0;
-            padding-left: 50px;
+            padding-left: 3.125rem;
           }
           li {
-            padding-bottom: 40px;
+            padding-bottom: 2.5rem;
             color: #58595b;
-            padding-left: 10px;
-            font-size: 18px;
+            padding-left: 0.625rem;
+            font-size: 1.125rem;
             font-weight: 500;
             font-style: italic;
           }
         }
         .profile-language {
-          margin-top: 40px;
-          padding-bottom: 40px;
+          margin-top: 2.5rem;
+          padding-bottom: 2.5rem;
           h3 {
             @extend %profile-heading; 
           }
           ul {
             margin: 0;
-            padding-left: 50px;
+            padding-left: 3.125rem;
           }
           li {
-            padding-bottom: 30px;
+            padding-bottom: 1.875rem;
             color: #58595b;
             padding-left: 10px;
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 500;
             span {
               padding-left: 10%;
@@ -127,30 +136,32 @@ body {
     }
     .portfolio-main-right {
       background-color: #d2d3d4;
-      padding: 50px 0 0 0;
-      .portfolio-personalia {
+      padding: 3.125rem 0 3.125rem 0;
+      .bg-white-color {
         background-color: #fff;
+        padding: 15px 0px;
+        height: 1809px;
         margin-right: 50px;
-        padding-top: 50px;
-        padding-left: 40px;
-        padding-bottom: 40px;
+      }
+      .portfolio-personalia {
+        margin-right: 3.125rem;
+        padding-left: 2.5rem;
         h3 {
           @extend %profile-heading;
         }
         p {
-          padding-left: 30px;
-          padding-right: 30px;
+          padding-left: 1.875rem;
+          padding-right: 1.875rem;
           color: #58595b;
           font-style: italic;
-          font-size: 18px;
+          font-size: 1.125rem;
           line-height: 35px;
         }
       }
       .portfolio-education {
-        background-color: #fff;
-        margin-right: 50px;
+        margin-right: 3.125rem;
         padding-left: 70px;
-        padding-bottom: 40px;
+        padding-bottom: 2.5rem;
         h3 {
           @extend %profile-heading;
           margin: 0;
@@ -158,16 +169,23 @@ body {
         .portfolio-education-grid {
           display: grid;
           grid-template-columns: 10% auto;
+          position: relative;
           .portfolio-education-img {
-            padding-top: 50px;
-            img {
-              height: 250px;
-            }
+            margin: 3.125rem 0;
+            border-left: 2px solid #bdbdc0;
           }
           .portfolio-education-list {
-            padding-top: 50px;
+            padding-top: 3.125rem;
             .portfolio-education-details {
               margin-bottom: 60px;
+              .border-dots {
+                @extend %dots-style;
+                top: 25%;
+              }
+              .border-dots-bottom {
+                @extend %dots-style;
+                top: 68%;
+              }
               span {
                 font-size: 20px;
                 color: #58595b;
@@ -188,8 +206,7 @@ body {
         }
       }
       .portfolio-work-experience {
-        background-color: #fff;
-        margin-right: 50px;
+        margin-right: 3.125rem;
         padding-left: 70px;
         h3 {
           @extend %profile-heading;
@@ -198,14 +215,13 @@ body {
         .work-experience-grid {
           display: grid;
           grid-template-columns: 8% auto;
+          position: relative;
           .work-experience-img {
-            padding-top: 50px;
-            img {
-              height: 687px;
-            }
+            margin: 3.125rem 0;
+            border-left: 2px solid #bdbdc0;
           }
           .work-experience-details {
-            padding-top: 50px;
+            padding-top: 3.125rem;
             .work-experience-position-tittle {
               display: grid;
               grid-template-columns: 60% auto;
@@ -214,6 +230,18 @@ body {
                   margin: 0;
                   color: #58595b;
                   padding-bottom: 7px;
+                }
+                .work-dots-1 {
+                  @extend %dots-style;
+                  top: 12%;
+                }
+                .work-dots-2 {
+                  @extend %dots-style;
+                  top: 41%;
+                }
+                .work-dots-3 {
+                  @extend %dots-style;
+                  top: 71%;
                 }
                 small {
                   font-style: italic;
@@ -224,23 +252,23 @@ body {
               }
               .location-main {
                 span {
-                  font-size: 16px;
+                  font-size: 1rem;
                   font-style: italic;
                   color: #58595b;
                   img {
-                    width: 15px;
+                    width: 0.75rem;
                   }
                 }
               }
             }
             .work-experience-paragraph {
               p {
-                padding-right: 30px;
+                padding-right: 1.875rem;
                 color: #58595b;
                 font-style: italic;
-                font-size: 18px;
-                line-height: 28px;
-                padding-bottom: 30px;
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+                padding-bottom: 1.875rem;
               }
             }
           }
@@ -255,38 +283,43 @@ body {
     .portfolio-main-grid {
       width: 95%;
       .portfolio-main-left {
-        padding: 50px 0 50px 0;
+        padding: 3.125rem 0 3.125rem 0;
         .portfolio-leftbar {
           width: 90%;
+          height: 1850px;
           .profile-name {
             h3 {
-              font-size: 36px;
+              font-size: 2.25rem;
               margin-bottom: 10px;
             }
           }
           .profile-contact-list {
-            padding: 40px 0;
+            padding: 2.5rem 0;
           }
           .profile-skills {
-            margin-top: 40px;
+            margin-top: 2.5rem;
           }
         }
       }
       .portfolio-main-right {
-        padding: 50px 0 50px 0;
+        padding: 3.125rem 0 3.125rem 0;
+        .bg-white-color {
+          height: 1818px;
+        }
+        
         .portfolio-personalia {
           margin-right: 20px;
           margin-left: 20px;
           padding-left: 0px;
           p {
             font-size: 17px;
-            line-height: 30px;
+            line-height: 1.875rem;
           }
         }
         .portfolio-education {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .portfolio-education-grid {
             .portfolio-education-list {
               .portfolio-education-details {
@@ -301,7 +334,7 @@ body {
         .portfolio-work-experience {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .work-experience-grid {
             .work-experience-details {
               .work-experience-position-tittle {
@@ -330,38 +363,43 @@ body {
     .portfolio-main-grid {
       width: 95%;
       .portfolio-main-left {
-        padding: 50px 0 50px 0;
+        padding: 3.125rem 0 50px 0;
         .portfolio-leftbar {
           width: 90%;
+          height: 2220px;
+          margin: 0 auto;
           .profile-name {
             h3 {
-              font-size: 36px;
-              margin-bottom: 10px;
+              font-size: 2.25rem;
+              margin-bottom: 0.625rem;
             }
           }
           .profile-contact-list {
-            padding: 40px 0;
+            padding: 2.5rem 0;
           }
           .profile-skills {
-            margin-top: 40px;
+            margin-top: 2.5rem;
           }
         }
       }
       .portfolio-main-right {
-        padding: 50px 0 50px 0;
+        padding: 3.125rem 0 3.1875rem 0;
+        .bg-white-color {
+          height: 2189px;
+        }
         .portfolio-personalia {
           margin-right: 20px;
           margin-left: 20px;
           padding-left: 0px;
           p {
             font-size: 17px;
-            line-height: 30px;
+            line-height: 1.875rem;
           }
         }
         .portfolio-education {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .portfolio-education-grid {
             .portfolio-education-list {
               .portfolio-education-details {
@@ -369,18 +407,18 @@ body {
               }
             }
             .portfolio-education-img {
-              height: 210px;
+              height: 20.625rem;
             }
           }
         }
         .portfolio-work-experience {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .work-experience-grid {
             .work-experience-details {
               .work-experience-position-tittle {
-                grid-template-columns: 60% auto;
+                grid-template-columns: 100%;
                 .location-main {
                   margin-top: 15px;
                 }
@@ -407,10 +445,11 @@ body {
       .portfolio-main-left {
         .portfolio-leftbar {
           width: 90%;
+          height: 2405px;
           .profile-name {
             h3 {
-              font-size: 36px;
-              margin-bottom: 10px;
+              font-size: 2.25rem;
+              margin-bottom: 0.625rem;
             }
           }
           .profile-contact-list {
@@ -426,11 +465,14 @@ body {
             }
           }
           .profile-skills {
-            margin-top: 40px;
+            margin-top: 2.5rem;
           }
         }
       }
       .portfolio-main-right {
+        .bg-white-color {
+          height: 2371px;
+        }
         .portfolio-personalia {
           margin-right: 20px;
           margin-left: 20px;
@@ -439,12 +481,12 @@ body {
         .portfolio-education {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
         }
         .portfolio-work-experience {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .work-experience-grid {
             .work-experience-details {
               .work-experience-position-tittle {
@@ -461,6 +503,7 @@ body {
   }
 }
 
+
 // Mobile Breakpoint 767
 @media (max-width: 959px) {
   .wrapper {
@@ -472,7 +515,7 @@ body {
           width: 90%;
           .profile-name {
             h3 {
-              font-size: 36px;
+              font-size: 2.25rem;
               margin-bottom: 10px;
             }
           }
@@ -489,11 +532,15 @@ body {
             }
           }
           .profile-skills {
-            margin-top: 40px;
+            margin-top: 2.5rem;
           }
         }
       }
       .portfolio-main-right {
+        .bg-white-color {
+          margin: 0 auto;
+          width: 90%;
+        }
         .portfolio-personalia {
           margin-right: 20px;
           margin-left: 20px;
@@ -502,12 +549,12 @@ body {
         .portfolio-education {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
         }
         .portfolio-work-experience {
           margin-right: 20px;
           margin-left: 20px;
-          padding-left: 30px;
+          padding-left: 1.875rem;
           .work-experience-grid {
             .work-experience-details {
               .work-experience-position-tittle {

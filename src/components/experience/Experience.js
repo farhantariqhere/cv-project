@@ -5,11 +5,13 @@ import Work from './Work';
 
 function Experience() {
   return (
-    <div className="Experience">
+    <div>
       <div className="portfolio-main-right">
-        <Personal />            
-        <Education />            
-        <Work />
+        <div class="bg-white-color">
+          <Personal />            
+          <Education />            
+          <Work />
+        </div>  
       </div>
     </div>
   );

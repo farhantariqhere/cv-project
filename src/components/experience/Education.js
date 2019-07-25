@@ -5,12 +5,16 @@ const data = [
     { 
       year:'2013 - 2015', 
       degree:'MASTERS IN COMPUTER SCINCE ENGENEERING', 
-      address:'University / College /  Name,Washington DC, USA .'
+      address:'University / College /  Name,Washington DC, USA .',
+      icon:require('../../assets/images/border-line-cer.png'),
+      className: 'border-dots'
     },
     { 
       year:'2013 - 2015', 
       degree:'MASTERS IN COMPUTER SCINCE ENGENEERING', 
-      address:'University / College /  Name,Washington DC, USA .'
+      address:'University / College /  Name,Washington DC, USA .',
+      icon:require('../../assets/images/border-line-cer.png'),
+      className: 'border-dots-bottom'
     }
   ]
 
@@ -20,13 +24,11 @@ const institute = data.map((item,i) => {
 
 function Education() {
   return (
-    <div className="Education">
+    <div>
       <div className="portfolio-education">
         <h3>EDUCATION</h3>
         <div className="portfolio-education-grid">
-          <div className="portfolio-education-img">
-            <img src={require('../../assets/images/border-line.png')} />
-          </div>
+          <div className="portfolio-education-img"></div>
           <div className="portfolio-education-list">
             {institute}
           </div>

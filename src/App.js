@@ -5,7 +5,7 @@ import './styles/css/min-style.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <div className="wrapper">
         <div className="portfolio-main-grid">
           <Bio />

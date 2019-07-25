@@ -7,21 +7,27 @@ function Work() {
       institute:'Company / Institute Name', 
       location:require('../../assets/images/location-icon.png'),
       city:'USA - Washingtoon DC',
-      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.'
+      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.',
+      className:'work-dots-1',
+      icon:require('../../assets/images/border-line-cer.png')
     },
     { 
       title:'JOB POSITION / TITLE', 
       institute:'Company / Institute Name', 
       location:require('../../assets/images/location-icon.png'),
       city:'USA - Washingtoon DC',
-      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.'
+      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.',
+      className:'work-dots-2',
+      icon:require('../../assets/images/border-line-cer.png')
     },
     { 
       title:'JOB POSITION / TITLE', 
       institute:'Company / Institute Name', 
       location:require('../../assets/images/location-icon.png'),
       city:'USA - Washingtoon DC',
-      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.'
+      text:' Accounting manager with five years of accounting experience in real estate and marketing industries. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  standard dummy text Fully knowledgeable in general accounting budgeting,journal entry preparation.',
+      className:'work-dots-3',
+      icon:require('../../assets/images/border-line-cer.png')
     },
   ]
 
@@ -30,14 +36,12 @@ function Work() {
   });
 
   return (
-    <div className="Work">
+    <div>
       <div className="portfolio-work-experience">
         <h3>WORK EXPERIENCE</h3>
 
         <div className="work-experience-grid">
-            <div className="work-experience-img">
-              <img src={require('../../assets/images/big-border-img.png')} />
-            </div>
+            <div className="work-experience-img"></div>
 
             <div className="work-experience-details">
             {jobs}
