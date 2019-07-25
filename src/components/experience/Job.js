@@ -6,12 +6,12 @@ function Job(props) {
      <div className="work-experience-position-tittle">
         <div className="position-tittle-main">
           <h2>{props.job.title}</h2>
-          <img class={props.job.className} src={props.job.icon} />
+          <img className={props.job.className} src={props.job.icon} alt="icon" />
           <small>{props.job.institute}</small>
         </div>
         <div className="location-main">
           <span>
-            <img src={props.job.location} />
+            <img src={props.job.location} alt="icon" />
             {props.job.city}
           </span>
         </div>

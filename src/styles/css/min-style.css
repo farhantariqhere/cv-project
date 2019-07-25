@@ -213,7 +213,7 @@ html {
     .wrapper .portfolio-main-grid .portfolio-main-right {
       padding: 3.125rem 0 3.125rem 0; }
       .wrapper .portfolio-main-grid .portfolio-main-right .bg-white-color {
-        height: 1818px; }
+        height: 1820px; }
       .wrapper .portfolio-main-grid .portfolio-main-right .portfolio-personalia {
         margin-right: 20px;
         margin-left: 20px;
@@ -302,7 +302,7 @@ html {
       .wrapper .portfolio-main-grid .portfolio-main-left .portfolio-leftbar .profile-skills {
         margin-top: 2.5rem; }
     .wrapper .portfolio-main-grid .portfolio-main-right .bg-white-color {
-      height: 2371px; }
+      height: 2375px; }
     .wrapper .portfolio-main-grid .portfolio-main-right .portfolio-personalia {
       margin-right: 20px;
       margin-left: 20px;
@@ -336,7 +336,8 @@ html {
         margin-top: 2.5rem; }
     .wrapper .portfolio-main-grid .portfolio-main-right .bg-white-color {
       margin: 0 auto;
-      width: 90%; }
+      width: 90%;
+      height: auto; }
     .wrapper .portfolio-main-grid .portfolio-main-right .portfolio-personalia {
       margin-right: 20px;
       margin-left: 20px;

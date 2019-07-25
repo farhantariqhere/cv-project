@@ -7,7 +7,7 @@ function Experience() {
   return (
     <div>
       <div className="portfolio-main-right">
-        <div class="bg-white-color">
+        <div className="bg-white-color">
           <Personal />            
           <Education />            
           <Work />
